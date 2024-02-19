@@ -1,0 +1,403 @@
+/* Nota: A fonte personalizada não está sendo carregada corretamente. Não consegui identificar o problema. */
+
+@font-face {
+  font-family: 'HelveticaUltraL';
+  src: url('/fonts/HelveticaUltraLt_0.ttf') format('truetype'), 
+
+}
+
+@font-face {
+  font-family: 'RobotoLight';
+  src: url('/fonts/Roboto-Light_0.ttf') format('truetype'), 
+
+}
+
+/* Nota: A fonte personalizada não está sendo carregada corretamente. Não consegui identificar o problema. */
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2rem;
+  align-items: center;
+  text-align: center;
+}
+
+header img {
+  width: 180px;
+}
+
+nav ul {
+  display: flex;
+  gap: 35px;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  color: white;
+  font-size: 20px;
+  position: relative;
+  text-decoration: none;
+}
+
+nav a::before {
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: white;
+  transition: background-color 0.3s;
+}
+
+nav a:hover::before {
+  background-color: transparent;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  transition: background-color 0.3s;
+}
+
+nav a:hover::after {
+  background-color: white;
+}
+
+.menu {
+  list-style: none;
+  padding-left: 0; 
+}
+
+#botaomobile {
+    display: none;
+    background: none;
+    border: none;
+}
+
+.bg-home {
+  background-image: url(/images/index-image.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+
+.text-conteiner{
+ margin-left: 14%;
+ margin-top: 12%;
+ max-width: 100%;
+}
+
+.text-conteiner h1{
+  color: white;
+  font-size: 58px;
+}
+
+.text-conteiner h2{
+  color: white;
+  font-size: 50px;
+}
+
+.form-conteiner {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  background-color: #29abe2;
+}
+
+.form-cadastro {
+  width: 50%;
+}
+
+.form-cadastro h1 {
+  text-align: center; 
+  color: white;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 50px;
+}
+
+label{
+  color: white;
+}
+
+.input-box {
+  margin-bottom: 15px;
+}
+
+.input-box label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-box input {
+  display: block;
+  width: 100%;
+  background: none;
+  outline: none;
+  padding: 8px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  color: white;
+}
+
+
+button[type="submit"] {
+  margin: 0 auto;
+  display: flex;
+  padding: 10px 20px;
+  background-color: #012d51;
+  color: #29abe2;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.table-container {
+  text-align: center;
+  position: relative; 
+}
+
+.topo-icon {
+  position: absolute;
+  top: 50%; 
+  right: 15%; 
+  width: 40px; 
+  height: 40px;
+}
+
+.table-container h1{
+  color: #29abe2;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 80px;
+  margin-bottom: 50px;
+
+}
+
+table {
+  border-collapse: collapse;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+td {
+  padding: 8px;
+  border: 1px solid #98D7F0;
+  color: #808080;
+  max-width: 150px;
+  word-wrap: break-word;
+}
+
+th {
+  border: 1px solid #98D7F0;
+  color: #012d51;
+}
+
+td:first-child {
+  color: #012d51;
+}
+
+
+footer{
+  background-image: url(/images/rodape-desktop.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30vh;
+}
+
+.footer-conteudo{
+  line-height: 30px;
+  padding-top: 5%;
+  text-align: center;
+  color: white;
+}
+
+@media only screen and (max-width: 991px) {
+
+
+ #botaomobile {
+    display: block;
+  }
+  
+  #botaomobile img {
+    width: 40px;
+  }
+  
+  #nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  #nav.active .menuslide {
+    display: flex;
+  }
+  
+  #nav.active .overlay {
+    display: block;
+  }
+  
+  
+  .logo {
+    order: 2;
+  }
+  
+  
+  header {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2rem;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding-bottom: 15px;
+  }
+  
+  .menuslide {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 100%; 
+    left: 0;
+    width: 50%;
+    padding: 2rem;
+    box-sizing: border-box;
+    display: none;
+    background-color: #29abe2;;
+  }
+
+  .topo-icon{
+    display: none;
+ }
+
+  table {
+    border-collapse: collapse;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+  
+}
+
+@media only screen and (max-width: 768px) {
+
+#botaomobile {
+  display: block;
+}
+
+#botaomobile img {
+  width: 40px;
+}
+
+#nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#nav.active .menuslide {
+  display: flex;
+}
+
+#nav.active .overlay {
+  display: block;
+}
+
+
+
+.logo {
+  order: 2;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2rem;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1));
+  padding-bottom: 15px;
+}
+
+.menuslide {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 100%; 
+  left: 0;
+  width: 50%;
+  padding: 2rem;
+  box-sizing: border-box;
+  display: none;
+  background-color: #29abe2;;
+}
+
+.topo-icon{
+    display: none;
+}
+
+table {
+  width: 100%; 
+}
+
+table thead {
+  display: none;
+}
+
+td {
+  padding: 8px;
+  border: 1px solid #98D7F0;
+  color: #808080;
+  max-width: 150px;
+  word-wrap: break-word;
+}  
+
+
+th{
+  display: flex ;
+  flex-direction: row;
+}
+
+td:first-child {
+  color: #012d51;
+  cursor: pointer;
+}
+
+td:not(:first-child) {
+  display: none;
+}
+
+td.show-data {
+  display: table-cell;
+}
+
+}
