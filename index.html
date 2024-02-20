@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/style.css">
-    <link rel="stylesheet" href="/styles/fonts.css">
-    <link rel="shortcut icon" type="image/png" href="/images/logos/logo-in8-dev.svg"/>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="shortcut icon" type="image/png" href="styles/images/logos/logo-in8-dev.svg"/>
     <title>IN8</title>
 </head>
 <body>
     <div class="bg-home">
         <header id="home"> 
             <div class="logo">
-                <img src="/images/logos/logo-in8-dev.svg">
+                <img src="styles/images/logos/logo-in8-dev.svg">
             </div>
             <nav id="nav">
-                <button id="botaomobile"><img src="/images/icones/hamburguer.svg" id="icon-menu"></button>
+                <button id="botaomobile"><img src="styles/images/icones/hamburguer.svg" id="icon-menu"></button>
                 <ul class="menuslide">
                     <li><a href="#formc">Cadastrar</a></li>
                     <li><a href="#lista">Lista</a></li>
@@ -55,7 +55,7 @@
         </div>
         <div class="table-container" id="lista">
             <h1>LISTA DE CADASTRO</h1>
-            <a href="#home"><img class="topo-icon" src="/images/icones/topo-pag.svg"></a>
+            <a href="#home"><img class="topo-icon" src="styles/images/icones/topo-pag.svg"></a>
             <table>
                 <thead>
                     <tr>
@@ -94,7 +94,7 @@
         nav.classList.toggle('active');
 
         const iconMenu = document.getElementById('icon-menu');
-        iconMenu.src = nav.classList.contains('active') ? "/images/icones/hamburguer-aberto0.svg" : "/images/icones/hamburguer.svg";
+        iconMenu.src = nav.classList.contains('active') ? "styles/images/icones/hamburguer-aberto0.svg" : "styles/images/icones/hamburguer.svg";
 
         const overlay = document.querySelector('.overlay');
         overlay.classList.toggle('active');

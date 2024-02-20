@@ -1,18 +1,15 @@
-/* Nota: A fonte personalizada não está sendo carregada corretamente. Não consegui identificar o problema. */
-
 @font-face {
   font-family: 'HelveticaUltraL';
-  src: url('/fonts/HelveticaUltraLt_0.ttf') format('truetype'), 
+  src: url('styles/fonts/HelveticaUltraLt_0.ttf') format('truetype'), 
 
 }
 
 @font-face {
-  font-family: 'RobotoLight';
-  src: url('/fonts/Roboto-Light_0.ttf') format('truetype'), 
+  font-family: 'FonteNv';
+  src: url('HelveticaUltraLt_0.ttf') format('truetype'), 
 
 }
 
-/* Nota: A fonte personalizada não está sendo carregada corretamente. Não consegui identificar o problema. */
 
 
 * {
@@ -92,7 +89,7 @@ nav a:hover::after {
 }
 
 .bg-home {
-  background-image: url(/images/index-image.jpg);
+  background-image: url(images/index-image.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -225,7 +222,7 @@ td:first-child {
 
 
 footer{
-  background-image: url(/images/rodape-desktop.jpg);
+  background-image: url(images/rodape-desktop.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -398,6 +395,13 @@ td:not(:first-child) {
 
 td.show-data {
   display: table-cell;
+}
+
+footer{
+  background-image: url(images/rodape-desktop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 20vh;
 }
 
 }
